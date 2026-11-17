@@ -91,8 +91,8 @@ agent = Agent(
 )
 
 result = agent.run("2 * (3 + 4)")
-print(result.answer)      # -> "14"
-print(result.completed)   # -> True
+print(result.answer)  # -> "14"
+print(result.completed)  # -> True
 for step in result.steps:
     print(step.tool, step.tool_input, "->", step.observation)
 ```
